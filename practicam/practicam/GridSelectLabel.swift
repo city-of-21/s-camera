@@ -87,7 +87,7 @@ class GridSelectLabel : NSObject{
     func createButton1()->UIButton{
         
         // UIボタンを作成
-        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[3]!,self.sizeAdjuster.sizeDicWidth[2]!))
+        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[4]!,self.sizeAdjuster.sizeDicWidth[4]!))
         let image = UIImage(named: "circle.png")
         button.setImage(image, forState: .Normal)
         button.layer.position = CGPointMake(self.sizeAdjuster.sizeDicWidth[28]!, self.sizeAdjuster.sizeDicHeight[27]!)
@@ -98,7 +98,7 @@ class GridSelectLabel : NSObject{
     func createButton2()->UIButton{
         
         // UIボタンを作成
-        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[3]!,self.sizeAdjuster.sizeDicWidth[2]!))
+        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[4]!,self.sizeAdjuster.sizeDicWidth[4]!))
         let image = UIImage(named: "s.png")
         button.setImage(image, forState: .Normal)
         button.layer.position = CGPointMake(self.sizeAdjuster.sizeDicWidth[28]!, self.sizeAdjuster.sizeDicHeight[24]!)
@@ -109,7 +109,7 @@ class GridSelectLabel : NSObject{
     func createButton3()->UIButton{
         
         // UIボタンを作成
-        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[3]!,self.sizeAdjuster.sizeDicWidth[2]!))
+        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[4]!,self.sizeAdjuster.sizeDicWidth[4]!))
         let image = UIImage(named: "3div.png")
         button.setImage(image, forState: .Normal)
         button.layer.position = CGPointMake(self.sizeAdjuster.sizeDicWidth[28]!, self.sizeAdjuster.sizeDicHeight[21]!)
@@ -120,7 +120,7 @@ class GridSelectLabel : NSObject{
     func createButton4()->UIButton{
         
         // UIボタンを作成
-        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[3]!,self.sizeAdjuster.sizeDicWidth[2]!))
+        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[4]!,self.sizeAdjuster.sizeDicWidth[4]!))
         let image = UIImage(named: "2div.png")
         button.setImage(image, forState: .Normal)
         button.layer.position = CGPointMake(self.sizeAdjuster.sizeDicWidth[28]!, self.sizeAdjuster.sizeDicHeight[18]!)
@@ -131,7 +131,7 @@ class GridSelectLabel : NSObject{
     func createButton5()->UIButton{
         
         // UIボタンを作成
-        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[3]!,self.sizeAdjuster.sizeDicWidth[2]!))
+        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[4]!,self.sizeAdjuster.sizeDicWidth[4]!))
         let image = UIImage(named: "diagonalR.png")
         button.setImage(image, forState: .Normal)
         button.layer.position = CGPointMake(self.sizeAdjuster.sizeDicWidth[28]!, self.sizeAdjuster.sizeDicHeight[15]!)
@@ -142,7 +142,7 @@ class GridSelectLabel : NSObject{
     func createButton6()->UIButton{
         
         // UIボタンを作成
-        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[3]!,self.sizeAdjuster.sizeDicWidth[2]!))
+        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[4]!,self.sizeAdjuster.sizeDicWidth[4]!))
         let image = UIImage(named: "diagonalL.png")
         button.setImage(image, forState: .Normal)
         button.layer.position = CGPointMake(self.sizeAdjuster.sizeDicWidth[28]!, self.sizeAdjuster.sizeDicHeight[12]!)
@@ -153,7 +153,7 @@ class GridSelectLabel : NSObject{
     func createButton7()->UIButton{
         
         // UIボタンを作成
-        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[3]!,self.sizeAdjuster.sizeDicWidth[2]!))
+        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[4]!,self.sizeAdjuster.sizeDicWidth[4]!))
         let image = UIImage(named: "dwindle.png")
         button.setImage(image, forState: .Normal)
         button.layer.position = CGPointMake(self.sizeAdjuster.sizeDicWidth[28]!, self.sizeAdjuster.sizeDicHeight[9]!)
@@ -164,7 +164,7 @@ class GridSelectLabel : NSObject{
     func createButton8()->UIButton{
         
         // UIボタンを作成
-        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[3]!,self.sizeAdjuster.sizeDicWidth[2]!))
+        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[4]!,self.sizeAdjuster.sizeDicWidth[4]!))
         let image = UIImage(named: "gap.png")
         button.setImage(image, forState: .Normal)
         button.layer.position = CGPointMake(self.sizeAdjuster.sizeDicWidth[28]!, self.sizeAdjuster.sizeDicHeight[6]!)

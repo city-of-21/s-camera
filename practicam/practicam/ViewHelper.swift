@@ -74,6 +74,17 @@ class ViewHelper {
         view.addSubview(image)
     }
     
+    func addSubview(view:UIView,iconView:NADIconView,no:Int) {
+        
+        if(view.viewWithTag(no) != nil){
+            var oldIconView: NADIconView = view.viewWithTag(no) as NADIconView
+            oldIconView.removeFromSuperview()
+        }
+        iconView.tag = no
+        iconView.layer.zPosition = CGFloat(no)
+        view.addSubview(iconView)
+    }
+    
     func addSubLayer(view:UIView,avCaptureVideoPreviewLayer:AVCaptureVideoPreviewLayer,key:String) {
         
         if(view.layer.valueForKey(key) != nil){

@@ -34,7 +34,7 @@ class MenuView {
     
     func createCameraButton()->UIButton {
         // UIボタンを作成
-        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[3]!,self.sizeAdjuster.sizeDicWidth[2]!))
+        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[6]!,self.sizeAdjuster.sizeDicHeight[3]!))
         button.layer.position = CGPoint(x: self.sizeAdjuster.getRateWidth(0.5), y:self.sizeAdjuster.sizeDicHeight[30]!)
         
         let image = UIImage(named: "cam.png")
@@ -47,7 +47,7 @@ class MenuView {
     
     func createCameraChangeButton()->UIButton {
         // UIボタンを作成
-        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[3]!,self.sizeAdjuster.sizeDicWidth[2]!))
+        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[6]!,self.sizeAdjuster.sizeDicHeight[3]!))
         button.layer.position = CGPoint(x: self.sizeAdjuster.getRateWidth(0.25), y:self.sizeAdjuster.sizeDicHeight[30]!)
         
         let image = UIImage(named: "camc.png")
@@ -59,7 +59,7 @@ class MenuView {
     
     func createGridButton()->UIButton {
         // UIボタンを作成
-        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[3]!,self.sizeAdjuster.sizeDicWidth[2]!))
+        let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[6]!,self.sizeAdjuster.sizeDicHeight[3]!))
         button.layer.position = CGPoint(x: self.sizeAdjuster.getRateWidth(0.75), y:self.sizeAdjuster.sizeDicHeight[30]!)
         let image = UIImage(named: "camg.png")
         button.setImage(image, forState: .Normal)

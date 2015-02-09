@@ -17,17 +17,6 @@ struct UINoStruct {
     static let BUTTON_CAMERA_CHANGE:Int = 10003
     static let BUTTON_GRID:Int = 10004
     
-    static let GRID_SELECT_BASE:Int = 1001
-    static let GRID_SELECT_TEXT:Int = 1002
-    static let GRID_SELECT_BUTTON1:Int = 1003 // circle
-    static let GRID_SELECT_BUTTON2:Int = 1004 // 3div
-    static let GRID_SELECT_BUTTON3:Int = 1005 // 2div
-    static let GRID_SELECT_BUTTON4:Int = 1006 // diagonalR
-    static let GRID_SELECT_BUTTON5:Int = 1007 // diagonalL
-    static let GRID_SELECT_BUTTON6:Int = 1008 // frameR
-    static let GRID_SELECT_BUTTON7:Int = 1009 // frameL
-    static let GRID_SELECT_BUTTON8:Int = 1010 // gap
-    
     static let LABEL_GRID_1_1:Int = 111 // circle
     static let LABEL_GRID_2_1:Int = 121 // S
     static let LABEL_GRID_3_1:Int = 131 // 3div
@@ -45,4 +34,24 @@ struct UINoStruct {
     static let LABEL_GRID_8_1:Int = 181 // gap
     static let LABEL_GRID_8_2:Int = 182
     static let LABEL_GRID_8_3:Int = 183
+    
+    static let GRID_SELECT_BASE:Int = 2001
+    static let GRID_SELECT_TEXT:Int = 2002
+    static let GRID_SELECT_BUTTON1:Int = 2003 // circle
+    static let GRID_SELECT_BUTTON2:Int = 2004 // 3div
+    static let GRID_SELECT_BUTTON3:Int = 2005 // 2div
+    static let GRID_SELECT_BUTTON4:Int = 2006 // diagonalR
+    static let GRID_SELECT_BUTTON5:Int = 2007 // diagonalL
+    static let GRID_SELECT_BUTTON6:Int = 2008 // frameR
+    static let GRID_SELECT_BUTTON7:Int = 2009 // frameL
+    static let GRID_SELECT_BUTTON8:Int = 2010 // gap
+    
+    static let PREVIEW_BASE:Int = 3001
+    static let PREVIEW_IMAGE:Int = 3002
+    static let PREVIEW_CLOSE:Int = 3003
+    static let PREVIEW_FACEBOOK:Int = 3004
+    static let PREVIEW_TWITTER:Int = 3005
+    
+    static let NEND_ICON:Int = 4000
+    
 }

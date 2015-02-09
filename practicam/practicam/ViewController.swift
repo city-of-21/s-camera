@@ -7,8 +7,9 @@
 
 import UIKit
 import AVFoundation
+import Social
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,NADIconLoaderDelegate{
     
     // セッション
     var avSession : AVCaptureSession!
@@ -18,6 +19,16 @@ class ViewController: UIViewController {
     var avImageOutput : AVCaptureStillImageOutput!
     // デバイスポジション
     var avDevicePosition : AVCaptureDevicePosition!
+    
+    // sns
+    var composeView : SLComposeViewController!
+    
+    // nend
+    private var iconLoader: NADIconLoader!
+    let ICON_COUNT:Int = 6
+    
+    // 撮影画像
+    var currentImage : UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +43,6 @@ class ViewController: UIViewController {
     override func viewDidDisappear(animated: Bool) {
         tearDownAVCapture()
     }
-    
     
     func createView(){
         
@@ -123,6 +133,57 @@ class ViewController: UIViewController {
         return videoLayer
     }
     
+    func createIconView(){
+        
+        var sizeAdjuster = SizeAdjuster(view:self.view)
+        
+        let ICON_SIZE:CGFloat = 75
+        
+        //NADIconLoaderクラスの生成
+        iconLoader = NADIconLoader()
+        
+        var overHalf = 0
+        for(var i = 0; i < self.ICON_COUNT; i++){
+            var x = 2
+            var y = (i + 1) * 3
+            if(i != 0 && i >= ICON_COUNT / 2){
+                x += 25
+                y = (overHalf + 1) * 3
+                overHalf++
+            }
+            var iconView:NADIconView!
+            iconView = NADIconView(frame: CGRect(x: sizeAdjuster.sizeDicWidth[x]!, y: sizeAdjuster.sizeDicHeight[y]!, width: ICON_SIZE, height: ICON_SIZE))
+            //テキスト色の設定
+            iconView.setTextColor(UIColor.whiteColor())
+            //テキストの表示or非表示
+            iconView.textHidden = false
+            
+            var no = UINoStruct.NEND_ICON + i
+            ViewHelper.viewHelperInstance.addSubview(self.view , iconView:iconView , no:no)
+            
+            //loaderへ追加
+            iconLoader.addIconView(iconView)
+        }
+        
+        //loaderへの設定
+        iconLoader.setNendID("befe374f76bb99964ce70373657c7a43b130a5f2",spotID: "303158")
+        iconLoader.delegate = self
+        iconLoader.isOutputLog = true
+        //load開始
+        iconLoader.load()
+    }
+    
+    func closeIconView(){
+        
+        for(var i = 0; i < self.ICON_COUNT; i++){
+            var no = UINoStruct.NEND_ICON + i
+            if(self.view.viewWithTag(no) != nil){
+                var old: NADIconView = self.view.viewWithTag(no) as NADIconView
+                old.removeFromSuperview()
+            }
+        }
+    }
+    
     // ボタンイベント
     func onClickCameraButton(sender: UIButton){
         
@@ -154,8 +215,20 @@ class ViewController: UIViewController {
                 break
             }
             
-            // アルバムに追加
+            // nend
+            self.createIconView()
+            
+            // preview
+            self.currentImage = saveImage;
+            var preview = Preview(view:self.view)
+            preview.createPreview(saveImage)
             UIImageWriteToSavedPhotosAlbum(saveImage, self, nil, nil)
+            var closeButton = preview.createCloseButton()
+            closeButton.addTarget(self, action: "onClickPreviewClose:", forControlEvents: .TouchUpInside)
+            var facebookButton = preview.createFacebookButton()
+            facebookButton.addTarget(self, action: "onClickPreviewFacebook:", forControlEvents: .TouchUpInside)
+            var twitterButton = preview.createTwitterButton()
+            twitterButton.addTarget(self, action: "onClickPreviewTwitter:", forControlEvents: .TouchUpInside)
         })
     }
     
@@ -283,6 +356,36 @@ class ViewController: UIViewController {
         }
     }
     
+    func onClickPreviewClose(sender: UIButton) {
+        
+        var preview = Preview(view:self.view)
+        preview.close()
+        closeIconView()
+        self.currentImage = nil
+    }
+    
+    func onClickPreviewFacebook(sender: UIButton) {
+        
+        composeView = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        // テキストを指定.
+        composeView.setInitialText("Created By practice-camera\nhttps://itunes.apple.com/us/app/practice-camera-picture-composition/id954811892?mt=8")
+        // 投稿する画像を指定.
+        composeView.addImage(self.currentImage)
+        // composeViewの画面遷移.
+        self.presentViewController(composeView, animated: true, completion: nil)
+    }
+    
+    func onClickPreviewTwitter(sender: UIButton) {
+        
+        composeView = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        // テキストを指定.
+        composeView.setInitialText("Created By practice-camera\nhttps://itunes.apple.com/us/app/practice-camera-picture-composition/id954811892?mt=8")
+        // 投稿する画像を指定.
+        composeView.addImage(self.currentImage)
+        // composeViewの画面遷移.
+        self.presentViewController(composeView, animated: true, completion: nil)
+    }
+    
     // メモリ解放
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -300,6 +403,12 @@ class ViewController: UIViewController {
         var gridSelectLabel = GridSelectLabel(view:self.view)
         if(self.view.viewWithTag(UINoStruct.GRID_SELECT_BASE) != nil){
             gridSelectLabel.close()
+        }
+        
+        var preview = Preview(view:self.view)
+        if(self.view.viewWithTag(UINoStruct.PREVIEW_BASE) != nil){
+            preview.close()
+            closeIconView()
         }
     }
     

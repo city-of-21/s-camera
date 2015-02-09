@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE7BE18D1A870A2C00A3D0E3 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7BE18C1A870A2C00A3D0E3 /* close.png */; };
+		BE7BE1911A8745BC00A3D0E3 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7BE1901A8745BC00A3D0E3 /* facebook.png */; };
+		BE7BE1931A8745DD00A3D0E3 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7BE1921A8745DD00A3D0E3 /* twitter.png */; };
 		BE9A89981A57A327006CA499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9A89971A57A327006CA499 /* AppDelegate.swift */; };
 		BE9A899A1A57A327006CA499 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9A89991A57A327006CA499 /* ViewController.swift */; };
 		BE9A899D1A57A327006CA499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9A899B1A57A327006CA499 /* Main.storyboard */; };
@@ -32,6 +35,12 @@
 		BE9A89D81A57A672006CA499 /* UINoStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9A89D31A57A672006CA499 /* UINoStruct.swift */; };
 		BE9A89DA1A57A680006CA499 /* ViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9A89D91A57A680006CA499 /* ViewHelper.swift */; };
 		BE9A89DC1A57A9CB006CA499 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9A89DB1A57A9CB006CA499 /* splash.png */; };
+		BEE325F71A74F36D002688CA /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE325F61A74F36D002688CA /* Preview.swift */; };
+		BEEC0C741A85FAD500B8AA94 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEC0C731A85FAD500B8AA94 /* AdSupport.framework */; };
+		BEEC0C761A85FAEC00B8AA94 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEC0C751A85FAEC00B8AA94 /* ImageIO.framework */; };
+		BEEC0C781A85FAF900B8AA94 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEC0C771A85FAF900B8AA94 /* Security.framework */; };
+		BEEC0C811A86001400B8AA94 /* libNendAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEC0C7A1A86001400B8AA94 /* libNendAd.a */; };
+		BEEC0C821A86001400B8AA94 /* NADView_readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEEC0C801A86001400B8AA94 /* NADView_readme.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE7BE18C1A870A2C00A3D0E3 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		BE7BE1901A8745BC00A3D0E3 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		BE7BE1921A8745DD00A3D0E3 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		BE9A89921A57A327006CA499 /* practicam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practicam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9A89961A57A327006CA499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE9A89971A57A327006CA499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +86,18 @@
 		BE9A89D31A57A672006CA499 /* UINoStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINoStruct.swift; sourceTree = "<group>"; };
 		BE9A89D91A57A680006CA499 /* ViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHelper.swift; sourceTree = "<group>"; };
 		BE9A89DB1A57A9CB006CA499 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		BEE325F61A74F36D002688CA /* Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		BEEC0C6A1A85F85D00B8AA94 /* NendAd-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NendAd-Bridging-Header.h"; sourceTree = "<group>"; };
+		BEEC0C731A85FAD500B8AA94 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		BEEC0C751A85FAEC00B8AA94 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		BEEC0C771A85FAF900B8AA94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BEEC0C7A1A86001400B8AA94 /* libNendAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNendAd.a; sourceTree = "<group>"; };
+		BEEC0C7B1A86001400B8AA94 /* NADIconArrayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADIconArrayView.h; sourceTree = "<group>"; };
+		BEEC0C7C1A86001400B8AA94 /* NADIconLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADIconLoader.h; sourceTree = "<group>"; };
+		BEEC0C7D1A86001400B8AA94 /* NADIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADIconView.h; sourceTree = "<group>"; };
+		BEEC0C7E1A86001400B8AA94 /* NADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADInterstitial.h; sourceTree = "<group>"; };
+		BEEC0C7F1A86001400B8AA94 /* NADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADView.h; sourceTree = "<group>"; };
+		BEEC0C801A86001400B8AA94 /* NADView_readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NADView_readme.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +105,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEEC0C781A85FAF900B8AA94 /* Security.framework in Frameworks */,
+				BEEC0C761A85FAEC00B8AA94 /* ImageIO.framework in Frameworks */,
+				BEEC0C741A85FAD500B8AA94 /* AdSupport.framework in Frameworks */,
+				BEEC0C811A86001400B8AA94 /* libNendAd.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +125,10 @@
 		BE9A89891A57A326006CA499 = {
 			isa = PBXGroup;
 			children = (
+				BEEC0C791A86001400B8AA94 /* NendAd */,
+				BEEC0C771A85FAF900B8AA94 /* Security.framework */,
+				BEEC0C751A85FAEC00B8AA94 /* ImageIO.framework */,
+				BEEC0C731A85FAD500B8AA94 /* AdSupport.framework */,
 				BE9A89941A57A327006CA499 /* practicam */,
 				BE9A89AA1A57A327006CA499 /* practicamTests */,
 				BE9A89931A57A327006CA499 /* Products */,
@@ -115,22 +147,27 @@
 		BE9A89941A57A327006CA499 /* practicam */ = {
 			isa = PBXGroup;
 			children = (
+				BEEC0C6A1A85F85D00B8AA94 /* NendAd-Bridging-Header.h */,
 				BE9A89B71A57A381006CA499 /* 2div.png */,
 				BE9A89B81A57A381006CA499 /* 3div.png */,
 				BE9A89BB1A57A397006CA499 /* cam.png */,
 				BE9A89BC1A57A397006CA499 /* camc.png */,
 				BE9A89BD1A57A397006CA499 /* camg.png */,
 				BE9A89BE1A57A397006CA499 /* circle.png */,
+				BE7BE18C1A870A2C00A3D0E3 /* close.png */,
 				BE9A89BF1A57A397006CA499 /* diagonalL.png */,
 				BE9A89C01A57A397006CA499 /* diagonalR.png */,
 				BE9A89C11A57A397006CA499 /* dwindle.png */,
+				BE7BE1901A8745BC00A3D0E3 /* facebook.png */,
 				BE9A89C21A57A397006CA499 /* gap.png */,
 				BE9A89D01A57A672006CA499 /* s.png */,
 				BE9A89DB1A57A9CB006CA499 /* splash.png */,
+				BE7BE1921A8745DD00A3D0E3 /* twitter.png */,
 				BE9A89971A57A327006CA499 /* AppDelegate.swift */,
 				BE9A89C31A57A397006CA499 /* GridSelectLabel.swift */,
 				BE9A89C41A57A397006CA499 /* GridView.swift */,
 				BE9A89CF1A57A672006CA499 /* MenuView.swift */,
+				BEE325F61A74F36D002688CA /* Preview.swift */,
 				BE9A89D11A57A672006CA499 /* SizeAdjuster.swift */,
 				BE9A89D21A57A672006CA499 /* UIColorExtension.swift */,
 				BE9A89D31A57A672006CA499 /* UINoStruct.swift */,
@@ -167,6 +204,21 @@
 				BE9A89AC1A57A327006CA499 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEEC0C791A86001400B8AA94 /* NendAd */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC0C7A1A86001400B8AA94 /* libNendAd.a */,
+				BEEC0C7B1A86001400B8AA94 /* NADIconArrayView.h */,
+				BEEC0C7C1A86001400B8AA94 /* NADIconLoader.h */,
+				BEEC0C7D1A86001400B8AA94 /* NADIconView.h */,
+				BEEC0C7E1A86001400B8AA94 /* NADInterstitial.h */,
+				BEEC0C7F1A86001400B8AA94 /* NADView.h */,
+				BEEC0C801A86001400B8AA94 /* NADView_readme.txt */,
+			);
+			name = NendAd;
+			path = "../../../Downloads/NendSDK_iOS-2.5.7/Nend/NendAd";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +313,13 @@
 				BE9A89C51A57A397006CA499 /* cam.png in Resources */,
 				BE9A89CA1A57A397006CA499 /* diagonalR.png in Resources */,
 				BE9A89CC1A57A397006CA499 /* gap.png in Resources */,
+				BEEC0C821A86001400B8AA94 /* NADView_readme.txt in Resources */,
 				BE9A89A21A57A327006CA499 /* LaunchScreen.xib in Resources */,
+				BE7BE1931A8745DD00A3D0E3 /* twitter.png in Resources */,
+				BE7BE1911A8745BC00A3D0E3 /* facebook.png in Resources */,
 				BE9A89CB1A57A397006CA499 /* dwindle.png in Resources */,
 				BE9A899F1A57A327006CA499 /* Images.xcassets in Resources */,
+				BE7BE18D1A870A2C00A3D0E3 /* close.png in Resources */,
 				BE9A89C91A57A397006CA499 /* diagonalL.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +340,7 @@
 			files = (
 				BE9A89D41A57A672006CA499 /* MenuView.swift in Sources */,
 				BE9A89DA1A57A680006CA499 /* ViewHelper.swift in Sources */,
+				BEE325F71A74F36D002688CA /* Preview.swift in Sources */,
 				BE9A89D71A57A672006CA499 /* UIColorExtension.swift in Sources */,
 				BE9A89CD1A57A397006CA499 /* GridSelectLabel.swift in Sources */,
 				BE9A89D81A57A672006CA499 /* UINoStruct.swift in Sources */,
@@ -419,7 +476,13 @@
 				INFOPLIST_FILE = practicam/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NendAd",
+					"/Users/ken/Downloads/NendSDK_iOS-2.5.7/Nend/NendAd",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "practicam/NendAd-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -431,7 +494,13 @@
 				INFOPLIST_FILE = practicam/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NendAd",
+					"/Users/ken/Downloads/NendSDK_iOS-2.5.7/Nend/NendAd",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "practicam/NendAd-Bridging-Header.h";
 			};
 			name = Release;
 		};
