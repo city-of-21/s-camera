@@ -94,7 +94,7 @@ class Preview {
         let button = UIButton(frame: CGRectMake(0,0,self.sizeAdjuster.sizeDicWidth[4]!,self.sizeAdjuster.sizeDicWidth[4]!))
         let image = UIImage(named: "twitter.png")
         button.setImage(image, forState: .Normal)
-        button.layer.position = CGPointMake(self.sizeAdjuster.sizeDicWidth[12]!, self.sizeAdjuster.sizeDicHeight[26]!)
+        button.layer.position = CGPointMake(self.sizeAdjuster.sizeDicWidth[13]!, self.sizeAdjuster.sizeDicHeight[26]!)
         ViewHelper.viewHelperInstance.addSubview(self.baseView , button:button , no:UINoStruct.PREVIEW_TWITTER)
         return button
     }

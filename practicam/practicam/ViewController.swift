@@ -144,11 +144,11 @@ class ViewController: UIViewController,NADIconLoaderDelegate{
         
         var overHalf = 0
         for(var i = 0; i < self.ICON_COUNT; i++){
-            var x = 2
-            var y = (i + 1) * 3
+            var x = 1
+            var y = (i + 1) * 5
             if(i != 0 && i >= ICON_COUNT / 2){
-                x += 25
-                y = (overHalf + 1) * 3
+                x += 26
+                y = (overHalf + 1) * 5
                 overHalf++
             }
             var iconView:NADIconView!
